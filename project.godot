@@ -17,7 +17,3 @@ _global_script_class_icons={
 
 config/name="Pokemon Godot"
 config/icon="res://icon.png"
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"
