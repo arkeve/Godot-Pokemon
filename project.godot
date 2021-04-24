@@ -48,3 +48,7 @@ texture={
 "stream": false,
 "svg/scale": 1.0
 }
+
+[rendering]
+
+quality/2d/use_pixel_snap=true
