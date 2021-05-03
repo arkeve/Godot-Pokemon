@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Tilesets/grass1_tileset.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Water/WaterTexture.tres" type="Texture" id=3]
 [ext_resource path="res://Tree.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Flower.tscn" type="PackedScene" id=5]
+[ext_resource path="res://TallGrass.tscn" type="PackedScene" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -291,6 +292,143 @@ position = Vector2( 16, 96 )
 
 [node name="Flower45" parent="Node2D" instance=ExtResource( 5 )]
 position = Vector2( 0, 96 )
+
+[node name="Grasses" type="Node2D" parent="."]
+
+[node name="TallGrass" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 64, -112 )
+
+[node name="TallGrass2" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 80, -112 )
+
+[node name="TallGrass3" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 96, -112 )
+
+[node name="TallGrass4" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 64, -128 )
+
+[node name="TallGrass5" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 80, -128 )
+
+[node name="TallGrass6" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 96, -128 )
+
+[node name="TallGrass7" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 64, -144 )
+
+[node name="TallGrass8" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 80, -144 )
+
+[node name="TallGrass9" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 96, -144 )
+
+[node name="TallGrass10" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 160, -128 )
+
+[node name="TallGrass11" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 176, -128 )
+
+[node name="TallGrass12" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 192, -128 )
+
+[node name="TallGrass13" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 160, -144 )
+
+[node name="TallGrass14" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 176, -144 )
+
+[node name="TallGrass15" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 192, -144 )
+
+[node name="TallGrass16" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 240, -128 )
+
+[node name="TallGrass17" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 256, -128 )
+
+[node name="TallGrass18" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 272, -128 )
+
+[node name="TallGrass19" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 240, -144 )
+
+[node name="TallGrass20" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 256, -144 )
+
+[node name="TallGrass21" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 272, -144 )
+
+[node name="TallGrass22" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -64, -128 )
+
+[node name="TallGrass23" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -48, -128 )
+
+[node name="TallGrass24" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -32, -128 )
+
+[node name="TallGrass25" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -64, -144 )
+
+[node name="TallGrass26" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -48, -144 )
+
+[node name="TallGrass27" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -32, -144 )
+
+[node name="TallGrass28" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -16, -128 )
+
+[node name="TallGrass29" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 0, -128 )
+
+[node name="TallGrass30" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 16, -128 )
+
+[node name="TallGrass31" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -16, -144 )
+
+[node name="TallGrass32" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 0, -144 )
+
+[node name="TallGrass33" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 16, -144 )
+
+[node name="TallGrass34" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -64, -208 )
+
+[node name="TallGrass35" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -48, -208 )
+
+[node name="TallGrass36" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -32, -208 )
+
+[node name="TallGrass37" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -64, -224 )
+
+[node name="TallGrass38" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -48, -224 )
+
+[node name="TallGrass39" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -32, -224 )
+
+[node name="TallGrass40" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -16, -208 )
+
+[node name="TallGrass41" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 0, -208 )
+
+[node name="TallGrass42" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 16, -208 )
+
+[node name="TallGrass43" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( -16, -224 )
+
+[node name="TallGrass44" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 0, -224 )
+
+[node name="TallGrass45" parent="Grasses" instance=ExtResource( 6 )]
+position = Vector2( 16, -224 )
 
 [node name="YSort" type="YSort" parent="."]
 
