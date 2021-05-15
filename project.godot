@@ -15,7 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Pokemon Godot"
-run/main_scene="res://Town.tscn"
+run/main_scene="res://SceneManager.tscn"
 
 [display]
 
