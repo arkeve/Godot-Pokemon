@@ -16,5 +16,6 @@ func finished_fading():
 	
 	var scene = load(next_scene)
 	$CurrentScene.add_child(scene.instance())
+	
 	$ScreenTransition.fade_screen_normal()
 

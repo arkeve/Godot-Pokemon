@@ -82,15 +82,13 @@ collision_mask = 0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-visible = false
-position = Vector2( 16, 64 )
 texture = ExtResource( 1 )
 centered = false
 vframes = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 modulate = Color( 0.752941, 0.27451, 0.670588, 1 )
-position = Vector2( 24, 72 )
+position = Vector2( 8, 8 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

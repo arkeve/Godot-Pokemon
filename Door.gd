@@ -10,8 +10,9 @@ var player_near_door: bool = false
 
 func _ready():
 	sprite.visible = false
-	get_tree().current_scene.find_node("Player").connect("player_entering_door_signal", self, "enter_door")
-	get_tree().current_scene.find_node("Player").connect("player_entered_door_signal", self, "close_door")
+	var player = find_parent("CurrentScene").get_children().back().find_node("Player")
+	player.connect("player_entering_door_signal", self, "enter_door")
+	player.connect("player_entered_door_signal", self, "close_door")
 
 
 func _get_configuration_warning():
