@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Buildings/house1.png" type="Texture" id=1]
+[ext_resource path="res://Door.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 40, 32 )
+
+[node name="House" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 40, 48 )
+shape = SubResource( 1 )
+
+[node name="Door" parent="." instance=ExtResource( 2 )]
+position = Vector2( 16, 64 )
+next_scene_path = "res://PlayerHomeFloor1.tscn"
