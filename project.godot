@@ -15,7 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Pokemon Godot"
-run/main_scene="res://Town.tscn"
+run/main_scene="res://SceneManager.tscn"
 
 [display]
 
@@ -53,6 +53,7 @@ texture={
 2d_physics/layer_1="Player"
 2d_physics/layer_2="World"
 2d_physics/layer_3="Ledge"
+2d_physics/layer_4="Door"
 
 [rendering]
 
