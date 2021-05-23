@@ -1,10 +1,13 @@
 extends Area2D
 
 export(String, FILE) var next_scene_path = ""
+export(bool) var invisible_door = false
 onready var sprite = $Sprite
 onready var anim_player = $AnimationPlayer
 
 func _ready():
+	if invisible_door:
+		sprite.texture = null
 	sprite.visible = false
 	var player = find_parent("CurrentScene").get_children().back().find_node("Player")
 	player.connect("player_entering_door_signal", self, "enter_door")

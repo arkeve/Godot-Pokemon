@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Buildings/pallet town/mat.png" type="Texture" id=1]
+
+[node name="Mat" type="TextureRect"]
+margin_left = 56.0
+margin_top = 136.0
+margin_right = 88.0
+margin_bottom = 152.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
