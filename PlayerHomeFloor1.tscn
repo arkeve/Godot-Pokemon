@@ -92,3 +92,5 @@ position = Vector2( 64, 128 )
 position = Vector2( 64, 144 )
 next_scene_path = "res://Town.tscn"
 invisible_door = true
+spawn_location = Vector2( -64, 80 )
+spawn_direction = Vector2( 0, 1 )
