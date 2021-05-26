@@ -451,7 +451,7 @@ start_node = "Idle"
 [sub_resource type="AnimationNodeStateMachinePlayback" id=37]
 
 [node name="Player" type="KinematicBody2D"]
-collision_mask = 6
+collision_mask = 14
 script = ExtResource( 2 )
 
 [node name="Shadow" type="Sprite" parent="."]
