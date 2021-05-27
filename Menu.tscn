@@ -20,9 +20,9 @@ __meta__ = {
 }
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Control"]
-margin_left = 256.0
+margin_left = 176.0
 margin_top = 1.0
-margin_right = 319.0
+margin_right = 239.0
 margin_bottom = 96.0
 texture = ExtResource( 1 )
 patch_margin_left = 6
@@ -36,15 +36,15 @@ __meta__ = {
 [node name="TextVBoxContainer" type="VBoxContainer" parent="Control/NinePatchRect"]
 margin_left = 15.0
 margin_top = 10.0
-margin_right = 79.0
-margin_bottom = 115.0
+margin_right = 64.0
+margin_bottom = 95.0
 custom_constants/separation = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect/TextVBoxContainer"]
-margin_right = 64.0
+margin_right = 49.0
 margin_bottom = 11.0
 rect_min_size = Vector2( 49, 11 )
 custom_fonts/normal_font = SubResource( 1 )
@@ -56,7 +56,7 @@ __meta__ = {
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Control/NinePatchRect/TextVBoxContainer"]
 margin_top = 14.0
-margin_right = 64.0
+margin_right = 49.0
 margin_bottom = 25.0
 rect_min_size = Vector2( 49, 11 )
 custom_fonts/normal_font = SubResource( 1 )
@@ -68,7 +68,7 @@ __meta__ = {
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="Control/NinePatchRect/TextVBoxContainer"]
 margin_top = 28.0
-margin_right = 64.0
+margin_right = 49.0
 margin_bottom = 39.0
 rect_min_size = Vector2( 49, 11 )
 custom_fonts/normal_font = SubResource( 1 )
@@ -80,7 +80,7 @@ __meta__ = {
 
 [node name="RichTextLabel4" type="RichTextLabel" parent="Control/NinePatchRect/TextVBoxContainer"]
 margin_top = 42.0
-margin_right = 64.0
+margin_right = 49.0
 margin_bottom = 53.0
 rect_min_size = Vector2( 49, 11 )
 custom_fonts/normal_font = SubResource( 1 )
@@ -92,7 +92,7 @@ __meta__ = {
 
 [node name="RichTextLabel5" type="RichTextLabel" parent="Control/NinePatchRect/TextVBoxContainer"]
 margin_top = 56.0
-margin_right = 64.0
+margin_right = 49.0
 margin_bottom = 67.0
 rect_min_size = Vector2( 49, 11 )
 custom_fonts/normal_font = SubResource( 1 )
@@ -104,7 +104,7 @@ __meta__ = {
 
 [node name="RichTextLabel6" type="RichTextLabel" parent="Control/NinePatchRect/TextVBoxContainer"]
 margin_top = 70.0
-margin_right = 64.0
+margin_right = 49.0
 margin_bottom = 81.0
 rect_min_size = Vector2( 49, 11 )
 custom_fonts/normal_font = SubResource( 1 )
@@ -114,7 +114,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="Control/NinePatchRect"]
+[node name="SelectArrow" type="TextureRect" parent="Control/NinePatchRect"]
 margin_left = 8.0
 margin_top = 10.0
 margin_right = 72.0
