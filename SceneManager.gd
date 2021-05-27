@@ -8,6 +8,9 @@ var player_direction = Vector2(0, 0)
 func _ready():
 	pass # Replace with function body.
 
+func _unhandled_input(event):
+	if event.is_action_pressed("menu"):
+		$Menu/Control.visible = !$Menu/Control.visible
 
 func transition_to_scene(new_scene: String, spawn_location: Vector2, spawn_direction: Vector2):
 	next_scene = new_scene
