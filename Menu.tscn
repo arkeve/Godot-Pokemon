@@ -115,12 +115,10 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Control/NinePatchRect"]
-anchor_left = 0.1
-anchor_right = 0.1
-margin_left = 1.70001
-margin_top = 9.0
-margin_right = 7.70001
-margin_bottom = 19.0
+margin_left = 8.0
+margin_top = 10.0
+margin_right = 72.0
+margin_bottom = 20.0
 rect_min_size = Vector2( 6, 10 )
 texture = ExtResource( 4 )
 __meta__ = {
