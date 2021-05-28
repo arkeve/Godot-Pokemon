@@ -6,7 +6,7 @@ var player_direction = Vector2(0, 0)
 
 
 enum TransitionType {
-	NEW_SCENE, PARTY_SCREEN,
+	NEW_SCENE, PARTY_SCREEN, MENU_ONLY,
 }
 var transition_type = TransitionType.NEW_SCENE
 
@@ -19,6 +19,11 @@ func _ready():
 func transition_to_party_screen():
 	$ScreenTransition/AnimationPlayer.play("FadeToBlack")
 	transition_type = TransitionType.PARTY_SCREEN
+	
+func transition_exit_party_screen():
+	$ScreenTransition/AnimationPlayer.play("FadeToBlack")
+	transition_type = TransitionType.MENU_ONLY
+	
 
 func transition_to_scene(new_scene: String, spawn_location: Vector2, spawn_direction: Vector2):
 	next_scene = new_scene
@@ -37,4 +42,7 @@ func finished_fading():
 			player.set_spawn(player_location, player_direction)
 		TransitionType.PARTY_SCREEN:
 			$Menu.load_party_screen()
-			$ScreenTransition/AnimationPlayer.play("FadeToNormal")
+		TransitionType.MENU_ONLY:
+			$Menu.unload_party_screen()
+			
+	$ScreenTransition/AnimationPlayer.play("FadeToNormal")
