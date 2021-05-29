@@ -28,7 +28,7 @@ var player_state = PlayerState.IDLE
 var facing_direction = FacingDirection.DOWN
 
 var initial_position = Vector2(0, 0)
-var input_direction = Vector2(0, 0)
+var input_direction = Vector2(0, 1)
 var is_moving = false
 var stop_input: bool = false
 var percent_moved_to_next_tile = 0.0
@@ -39,6 +39,15 @@ func _ready():
 	anim_tree.active = true
 	initial_position = position
 	shadow.visible = false
+	anim_tree.set("parameters/Idle/blend_position", input_direction)
+	anim_tree.set("parameters/Walk/blend_position", input_direction)
+	anim_tree.set("parameters/Turn/blend_position", input_direction)
+	
+func set_spawn(location: Vector2, direction: Vector2):
+		anim_tree.set("parameters/Idle/blend_position", direction)
+		anim_tree.set("parameters/Walk/blend_position", direction)
+		anim_tree.set("parameters/Turn/blend_position", direction)
+		position = location
 	
 func _physics_process(delta):
 	if player_state == PlayerState.TURNING or stop_input:

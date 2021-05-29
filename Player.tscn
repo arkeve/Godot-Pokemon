@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 8 )
 
-[sub_resource type="Animation" id=37]
+[sub_resource type="Animation" id=2]
 resource_name = "Disappear"
 length = 0.1
 tracks/0/type = "value"
@@ -37,8 +37,7 @@ tracks/1/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "IdleDown"
+[sub_resource type="Animation" id=3]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -53,8 +52,7 @@ tracks/0/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "IdleLeft"
+[sub_resource type="Animation" id=4]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -81,8 +79,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "IdleRight"
+[sub_resource type="Animation" id=5]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -109,8 +106,7 @@ tracks/1/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=5]
-resource_name = "IdleUp"
+[sub_resource type="Animation" id=6]
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -125,8 +121,7 @@ tracks/0/keys = {
 "values": [ 4 ]
 }
 
-[sub_resource type="Animation" id=6]
-resource_name = "TurnDown"
+[sub_resource type="Animation" id=7]
 length = 0.1
 step = 0.05
 tracks/0/type = "value"
@@ -156,8 +151,7 @@ tracks/1/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "TurnLeft"
+[sub_resource type="Animation" id=8]
 length = 0.1
 step = 0.05
 tracks/0/type = "value"
@@ -199,8 +193,7 @@ tracks/2/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=8]
-resource_name = "TurnRight"
+[sub_resource type="Animation" id=9]
 length = 0.1
 step = 0.05
 tracks/0/type = "value"
@@ -242,8 +235,7 @@ tracks/2/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=9]
-resource_name = "TurnUp"
+[sub_resource type="Animation" id=10]
 length = 0.1
 step = 0.05
 tracks/0/type = "value"
@@ -273,23 +265,6 @@ tracks/1/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=10]
-length = 0.8
-loop = true
-step = 0.2
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 1 ]
-}
-
 [sub_resource type="Animation" id=11]
 length = 0.8
 loop = true
@@ -304,19 +279,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 6, 7, 8, 7 ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Sprite:flip_h")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
+"values": [ 0, 1, 2, 1 ]
 }
 
 [sub_resource type="Animation" id=12]
@@ -345,7 +308,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ false ]
 }
 
 [sub_resource type="Animation" id=13]
@@ -362,79 +325,106 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
+"values": [ 6, 7, 8, 7 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.8
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
 "values": [ 3, 4, 5, 4 ]
 }
 
-[sub_resource type="AnimationNodeAnimation" id=14]
+[sub_resource type="AnimationNodeAnimation" id=15]
 animation = "IdleLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=15]
+[sub_resource type="AnimationNodeAnimation" id=16]
 animation = "IdleRight"
 
-[sub_resource type="AnimationNodeAnimation" id=16]
+[sub_resource type="AnimationNodeAnimation" id=17]
 animation = "IdleDown"
 
-[sub_resource type="AnimationNodeAnimation" id=17]
+[sub_resource type="AnimationNodeAnimation" id=18]
 animation = "IdleUp"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=18]
-blend_point_0/node = SubResource( 14 )
+[sub_resource type="AnimationNodeBlendSpace2D" id=19]
+blend_point_0/node = SubResource( 15 )
 blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 15 )
+blend_point_1/node = SubResource( 16 )
 blend_point_1/pos = Vector2( 1, 0 )
-blend_point_2/node = SubResource( 16 )
+blend_point_2/node = SubResource( 17 )
 blend_point_2/pos = Vector2( 0, 1 )
-blend_point_3/node = SubResource( 17 )
+blend_point_3/node = SubResource( 18 )
 blend_point_3/pos = Vector2( 0, -1 )
 blend_mode = 1
-
-[sub_resource type="AnimationNodeAnimation" id=19]
-animation = "TurnLeft"
 
 [sub_resource type="AnimationNodeAnimation" id=20]
-animation = "TurnRight"
+animation = "TurnLeft"
 
 [sub_resource type="AnimationNodeAnimation" id=21]
-animation = "TurnDown"
+animation = "TurnRight"
 
 [sub_resource type="AnimationNodeAnimation" id=22]
+animation = "TurnDown"
+
+[sub_resource type="AnimationNodeAnimation" id=23]
 animation = "TurnUp"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=23]
-blend_point_0/node = SubResource( 19 )
+[sub_resource type="AnimationNodeBlendSpace2D" id=24]
+blend_point_0/node = SubResource( 20 )
 blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 20 )
+blend_point_1/node = SubResource( 21 )
 blend_point_1/pos = Vector2( 1, 0 )
-blend_point_2/node = SubResource( 21 )
+blend_point_2/node = SubResource( 22 )
 blend_point_2/pos = Vector2( 0, 1 )
-blend_point_3/node = SubResource( 22 )
+blend_point_3/node = SubResource( 23 )
 blend_point_3/pos = Vector2( 0, -1 )
 blend_mode = 1
-
-[sub_resource type="AnimationNodeAnimation" id=24]
-animation = "WalkLeft"
 
 [sub_resource type="AnimationNodeAnimation" id=25]
-animation = "WalkRight"
+animation = "WalkLeft"
 
 [sub_resource type="AnimationNodeAnimation" id=26]
-animation = "WalkDown"
+animation = "WalkRight"
 
 [sub_resource type="AnimationNodeAnimation" id=27]
+animation = "WalkDown"
+
+[sub_resource type="AnimationNodeAnimation" id=28]
 animation = "WalkUp"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id=28]
-blend_point_0/node = SubResource( 24 )
+[sub_resource type="AnimationNodeBlendSpace2D" id=29]
+blend_point_0/node = SubResource( 25 )
 blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 25 )
+blend_point_1/node = SubResource( 26 )
 blend_point_1/pos = Vector2( 1, 0 )
-blend_point_2/node = SubResource( 26 )
+blend_point_2/node = SubResource( 27 )
 blend_point_2/pos = Vector2( 0, 1 )
-blend_point_3/node = SubResource( 27 )
+blend_point_3/node = SubResource( 28 )
 blend_point_3/pos = Vector2( 0, -1 )
 blend_mode = 1
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=29]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=30]
 
@@ -446,20 +436,22 @@ blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=34]
 
-[sub_resource type="AnimationNodeStateMachine" id=35]
-states/Idle/node = SubResource( 18 )
+[sub_resource type="AnimationNodeStateMachineTransition" id=35]
+
+[sub_resource type="AnimationNodeStateMachine" id=36]
+states/Idle/node = SubResource( 19 )
 states/Idle/position = Vector2( 253, 86.5555 )
-states/Turn/node = SubResource( 23 )
+states/Turn/node = SubResource( 24 )
 states/Turn/position = Vector2( 337.667, 169 )
-states/Walk/node = SubResource( 28 )
+states/Walk/node = SubResource( 29 )
 states/Walk/position = Vector2( 437.667, 86.3333 )
-transitions = [ "Idle", "Walk", SubResource( 29 ), "Walk", "Idle", SubResource( 30 ), "Idle", "Turn", SubResource( 31 ), "Turn", "Idle", SubResource( 32 ), "Turn", "Walk", SubResource( 33 ), "Walk", "Turn", SubResource( 34 ) ]
+transitions = [ "Idle", "Walk", SubResource( 30 ), "Walk", "Idle", SubResource( 31 ), "Idle", "Turn", SubResource( 32 ), "Turn", "Idle", SubResource( 33 ), "Turn", "Walk", SubResource( 34 ), "Walk", "Turn", SubResource( 35 ) ]
 start_node = "Idle"
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=36]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=37]
 
 [node name="Player" type="KinematicBody2D"]
-collision_mask = 6
+collision_mask = 14
 script = ExtResource( 2 )
 
 [node name="Shadow" type="Sprite" parent="."]
@@ -480,24 +472,24 @@ position = Vector2( 8, 8 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Disappear = SubResource( 37 )
-anims/IdleDown = SubResource( 2 )
-anims/IdleLeft = SubResource( 3 )
-anims/IdleRight = SubResource( 4 )
-anims/IdleUp = SubResource( 5 )
-anims/TurnDown = SubResource( 6 )
-anims/TurnLeft = SubResource( 7 )
-anims/TurnRight = SubResource( 8 )
-anims/TurnUp = SubResource( 9 )
-anims/WalkDown = SubResource( 10 )
-anims/WalkLeft = SubResource( 11 )
-anims/WalkRight = SubResource( 12 )
-anims/WalkUp = SubResource( 13 )
+anims/Disappear = SubResource( 2 )
+anims/IdleDown = SubResource( 3 )
+anims/IdleLeft = SubResource( 4 )
+anims/IdleRight = SubResource( 5 )
+anims/IdleUp = SubResource( 6 )
+anims/TurnDown = SubResource( 7 )
+anims/TurnLeft = SubResource( 8 )
+anims/TurnRight = SubResource( 9 )
+anims/TurnUp = SubResource( 10 )
+anims/WalkDown = SubResource( 11 )
+anims/WalkLeft = SubResource( 12 )
+anims/WalkRight = SubResource( 13 )
+anims/WalkUp = SubResource( 14 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 35 )
+tree_root = SubResource( 36 )
 anim_player = NodePath("../AnimationPlayer")
-parameters/playback = SubResource( 36 )
+parameters/playback = SubResource( 37 )
 parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Turn/blend_position = Vector2( 0, 0 )
 parameters/Walk/blend_position = Vector2( 0, 0 )
