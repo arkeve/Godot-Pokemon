@@ -10,8 +10,9 @@ var player_inside: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_tree().current_scene.find_node("Player").connect("player_moving_signal", self, "player_exiting_grass")
-	get_tree().current_scene.find_node("Player").connect("player_stopped_signal", self, "player_in_grass")
+	var player = find_parent("CurrentScene").get_children().back().find_node("Player")
+	player.connect("player_moving_signal", self, "player_exiting_grass")
+	player.connect("player_stopped_signal", self, "player_in_grass")
 
 func player_exiting_grass():
 	player_inside = false

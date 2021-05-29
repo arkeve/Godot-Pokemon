@@ -1,6 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Assets/Buildings/pallet town/player_home_floor_1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Buildings/pallet town/rival_home.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Door.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Buildings/pallet town/mat.png" type="Texture" id=4]
@@ -9,18 +9,15 @@
 extents = Vector2( 8, 88 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 96, 8 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 16, 8 )
+extents = Vector2( 104, 8 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 56, 8 )
+extents = Vector2( 64, 8 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 32, 8 )
 
-[node name="PlayerHomeFloor1" type="Node2D"]
+[node name="RivalHomeFloor" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -208.0
@@ -59,19 +56,15 @@ position = Vector2( -8, 88 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 200, 88 )
+position = Vector2( 216, 88 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 96, 24 )
+position = Vector2( 104, 24 )
 shape = SubResource( 2 )
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 176, 40 )
-shape = SubResource( 3 )
-
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 136, 152 )
+position = Vector2( 144, 152 )
 shape = SubResource( 4 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
@@ -81,12 +74,12 @@ shape = SubResource( 5 )
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 160, 80 )
+position = Vector2( 64, 128 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 modulate = Color( 0.12549, 0.313726, 0.85098, 1 )
 position = Vector2( 64, 144 )
 next_scene_path = "res://Town.tscn"
 is_invisible = true
-spawn_location = Vector2( -64, 80 )
+spawn_location = Vector2( 192, 80 )
 spawn_direction = Vector2( 0, 1 )
