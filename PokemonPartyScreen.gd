@@ -46,5 +46,5 @@ func _input(event):
 	elif event.is_action_pressed("z"):
 		match selected_option:
 			6:
-				get_parent().get_parent().transition_exit_party_screen()
+				Utils.get_scene_manager().transition_exit_party_screen()
 		
