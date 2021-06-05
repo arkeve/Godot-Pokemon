@@ -12,7 +12,7 @@ var selected_option: int = 0
 
 func _ready():
 	menu.visible = false
-	select_arrow.rect_position.y = 6 + (selected_option % 6) * 14
+	select_arrow.rect_position.y = 6 + (selected_option % 6) * 15
 
 func load_party_screen():
 	menu.visible = false
@@ -30,7 +30,7 @@ func _unhandled_input(event):
 	match screen_loaded:
 		ScreenLoaded.NOTHING:
 			if event.is_action_pressed("menu"):
-				var player = get_parent().get_node("CurrentScene").get_children().back().find_node("Player")
+				var player = Utils.get_player()
 				if !player.is_moving:
 					player.set_physics_process(false)
 					menu.visible = true
@@ -38,21 +38,21 @@ func _unhandled_input(event):
 		
 		ScreenLoaded.JUST_MENU:
 			if event.is_action_pressed("menu") or event.is_action_pressed("x"):
-				var player = get_parent().get_node("CurrentScene").get_children().back().find_node("Player")
+				var player = Utils.get_player()
 				player.set_physics_process(true)
 				menu.visible = false
 				screen_loaded = ScreenLoaded.NOTHING
 				
 			elif event.is_action_pressed("ui_down"):
 				selected_option += 1
-				select_arrow.rect_position.y = 6 + (selected_option % 6) * 14
+				select_arrow.rect_position.y = 6 + (selected_option % 6) * 15
 				
 			elif event.is_action_pressed("ui_up"):
 				if selected_option == 0:
 					selected_option = 5
 				else:
 					selected_option -= 1
-				select_arrow.rect_position.y = 6 + (selected_option % 6) * 14
+				select_arrow.rect_position.y = 6 + (selected_option % 6) * 15
 			elif event.is_action_pressed("z"):
 				get_parent().transition_to_party_screen()
 			

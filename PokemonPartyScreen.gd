@@ -11,7 +11,7 @@ onready var options: Dictionary = {
 	6: $CancelButton,
 }
 
-var selected_option: int = 3
+var selected_option: int = 0
 
 func unset_active_option():
 	options[selected_option].frame = 0
