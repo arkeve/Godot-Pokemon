@@ -1,17 +1,19 @@
 extends Node2D
 
 
+enum Option { FIRST_SLOT, SECOND_SLOT, THIRD_SLOT, FOURTH_SLOT, FIFTH_SLOT, SIXTH_SLOT, CANCEL }
+
 onready var options: Dictionary = {
-	0: $MainPokemonSlot/Background,
-	1: $SecondPokemonSlot/Background,
-	2: $ThirdPokemonSlot/Background,
-	3: $FourthPokemonSlot/Background,
-	4: $FifthPokemonSlot/Background,
-	5: $SixthPokemonSlot/Background,
-	6: $CancelButton,
+	Option.FIRST_SLOT: $MainPokemonSlot/Background,
+	Option.SECOND_SLOT: $SecondPokemonSlot/Background,
+	Option.THIRD_SLOT: $ThirdPokemonSlot/Background,
+	Option.FOURTH_SLOT: $FourthPokemonSlot/Background,
+	Option.FIFTH_SLOT: $FifthPokemonSlot/Background,
+	Option.SIXTH_SLOT: $SixthPokemonSlot/Background,
+	Option.CANCEL: $CancelButton,
 }
 
-var selected_option: int = 0
+var selected_option: int = Option.FIRST_SLOT
 
 func unset_active_option():
 	options[selected_option].frame = 0
@@ -45,6 +47,6 @@ func _input(event):
 		set_active_option()
 	elif event.is_action_pressed("z"):
 		match selected_option:
-			6:
+			Option.CANCEL:
 				Utils.get_scene_manager().transition_exit_party_screen()
 		
