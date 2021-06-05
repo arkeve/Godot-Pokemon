@@ -11,10 +11,10 @@ extents = Vector2( 8, 88 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 104, 8 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 64, 8 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 32, 8 )
 
 [node name="RivalHomeFloor" type="Node2D"]
@@ -39,9 +39,9 @@ __meta__ = {
 
 [node name="Mat" type="TextureRect" parent="."]
 margin_left = 56.0
-margin_top = 128.0
+margin_top = 136.0
 margin_right = 88.0
-margin_bottom = 144.0
+margin_bottom = 152.0
 texture = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -65,11 +65,11 @@ shape = SubResource( 2 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 144, 152 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 32, 152 )
-shape = SubResource( 5 )
+shape = SubResource( 4 )
 
 [node name="YSort" type="YSort" parent="."]
 
