@@ -1,0 +1,106 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/UI/menu_box_1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/pkmnfl.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/UI/ui_arrow_left_right.png" type="Texture" id=3]
+[ext_resource path="res://Menu.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+font_data = ExtResource( 2 )
+
+[node name="Menu" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
+margin_left = 177.0
+margin_top = 1.0
+margin_right = 239.0
+margin_bottom = 98.0
+texture = ExtResource( 1 )
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/NinePatchRect"]
+margin_left = 14.0
+margin_top = 6.0
+margin_right = 64.0
+margin_bottom = 92.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer"]
+margin_right = 50.0
+margin_bottom = 11.0
+rect_min_size = Vector2( 50, 11 )
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.435294, 0.435294, 0.533333, 1 )
+text = "POKeMON"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer"]
+margin_top = 15.0
+margin_right = 50.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 50, 11 )
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.435294, 0.435294, 0.533333, 1 )
+text = "BAG"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer"]
+margin_top = 30.0
+margin_right = 50.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 50, 11 )
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.435294, 0.435294, 0.533333, 1 )
+text = "Arkeve"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer"]
+margin_top = 45.0
+margin_right = 50.0
+margin_bottom = 56.0
+rect_min_size = Vector2( 50, 11 )
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.435294, 0.435294, 0.533333, 1 )
+text = "SAVE"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer"]
+margin_top = 60.0
+margin_right = 50.0
+margin_bottom = 71.0
+rect_min_size = Vector2( 50, 11 )
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.435294, 0.435294, 0.533333, 1 )
+text = "OPTION"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="Control/NinePatchRect/VBoxContainer"]
+margin_top = 75.0
+margin_right = 50.0
+margin_bottom = 86.0
+rect_min_size = Vector2( 50, 11 )
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.435294, 0.435294, 0.533333, 1 )
+text = "EXIT"
+
+[node name="TextureRect" type="TextureRect" parent="Control/NinePatchRect"]
+margin_left = 7.0
+margin_top = 6.0
+margin_right = 13.0
+margin_bottom = 16.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
