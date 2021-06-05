@@ -34,7 +34,7 @@ func finished_fading():
 			$CurrentScene.get_child(0).queue_free()
 			$CurrentScene.add_child(load(next_scene).instance())
 			
-			var player = $CurrentScene.get_children().back().find_node("Player")
+			var player = Utils.get_player()
 			player.set_spawn(player_location, player_direction)
 		TransitionType.PARTY_SCREEN:
 			$Menu.load_party_screen()
