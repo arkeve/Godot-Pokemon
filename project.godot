@@ -17,6 +17,10 @@ _global_script_class_icons={
 config/name="Pokemon Godot"
 run/main_scene="res://SceneManager.tscn"
 
+[autoload]
+
+Utils="*res://Autoload/utils.gd"
+
 [display]
 
 window/size/width=240
